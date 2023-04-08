@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+
+label {
+        display: block;
+        width: 80px;
+        height: 40px;
+        background-color: gray;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+}
+
+label::after {
+              content: "";
+              width: 40px;
+              height: 40px;
+              background-color: #cca5cf;
+              position: absolute;
+              border-radius: 20px;
+              left: 5px;
+              transition: 0.5s;
+    }
+input:checked + label{
+	background-color: purple;
+}
+input:checked + label:after {
+        left: calc(100% - 10px);
+        transform: translateX(-100%);
+    }

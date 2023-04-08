@@ -3,10 +3,35 @@
 <html>
 
 <head>
+	<style>
+        input[type="checkbox"] {
+          width: 0;
+          height: 0;
+          visibility: hidden;
+        }
+        </style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<center>
+		<h2>How do you want your project to be</h2>
+		<div  class="toggle-container">
+			<div class="g1">
+	        <input id="good" name="toggle_switch" type="checkbox" />
+        <label for="good"></label>Good
+				</div>
+			<div class="g2">
+	 <input id="cheap" name="toggle_switch" type="checkbox" />
+        <label for="cheap"></label>Cheap
+			</div>
+			<div class="g3" >
+				<input id="fast" name="toggle_switch" type="checkbox" />
+        <label for="fast"></label>Fast
+				
+			</div>
+		</div>	
+	</center>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
