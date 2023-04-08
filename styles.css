@@ -12,10 +12,10 @@ label {
 }
 
 label::after {
-              content: "";
+              content:"";
               width: 40px;
               height: 40px;
-              background-color: #cca5cf;
+              background-color: white;
               position: absolute;
               border-radius: 20px;
               left: 5px;
